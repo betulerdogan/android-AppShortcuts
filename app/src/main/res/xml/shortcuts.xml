@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
 
-</PreferenceScreen>
+    <!--Static Shortcut -->
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_open"
+        android:shortcutDisabledMessage="@string/static_shortcut_disabled_message"
+        android:shortcutId="static"
+        android:shortcutLongLabel="@string/static_shortcut_long_label"
+        android:shortcutShortLabel="@string/static_shortcut_short_label">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.betulerdogan.appshortcuts.MainActivity"
+            android:targetPackage="com.betulerdogan.appshortcuts" />
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.betulerdogan.appshortcuts.StaticShortcutActivity"
+            android:targetPackage="com.betulerdogan.appshortcuts"/>
+    </shortcut>
+</shortcuts>

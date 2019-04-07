@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 public class DynamicShortcutActivity extends AppCompatActivity {
 
+    public static final String ACTION = BuildConfig.APPLICATION_ID + ".OPEN_DYNAMIC_SHORTCUT";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
