@@ -15,7 +15,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.shotcuts"
+                android:resource="@xml/shortcuts"/>
         </activity>
+        <activity android:name=".DynamicShortcutActivity" />
+        <activity android:name=".StaticShortcutActivity"></activity>
     </application>
 
 </manifest>
